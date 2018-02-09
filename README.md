@@ -94,6 +94,9 @@ Navigate browser to http://localhost:3000 to view the **Hello world!** page.
 
 Go back and make some changes to the page and notice the page is automatically reloaded when edited!
 
+## More
+* [How to setup React Router](more/router.md)
+* [How to load React libraries from CDN](more/cdn.md)
 
-## Rererences
+## References
 * [Getting started with TypeScript and React](https://javascriptplayground.com/blog/2017/04/react-typescript/)
