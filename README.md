@@ -85,6 +85,21 @@ const App = () =>
 ReactDOM.render(<App />, document.getElementById('app'));
 ```
 
+## Add file `index.html`...
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Typescript App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/app.js"></script>
+  </body>
+</html>
+```
+
 ## Start the webpack development server...
 ```
 $ npm start
@@ -97,6 +112,7 @@ Go back and make some changes to the page and notice the page is automatically r
 ## More
 * [How to setup React Router](more/router.md)
 * [How to load React libraries from CDN](more/cdn.md)
+* [How to manage state with Redux](more/redux.md)
 
 ## References
 * [Getting started with TypeScript and React](https://javascriptplayground.com/blog/2017/04/react-typescript/)
