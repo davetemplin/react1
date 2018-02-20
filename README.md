@@ -4,7 +4,7 @@
 This is a quick walkthrough showing a minimal set of steps to setup a new React project from scratch using TypeScript and webpack. It is assumed the reader is already familiar with basic Node.js and React fundamentals and comfortable working with a command prompt, and that Node.js is already installed.
 
 ## Getting started
-Open a command prompt, create a new directory for the sample project, and initialize npm...
+Open a command prompt, create a new directory for the sample project, and initialize npm.
 
 ```
 $ mkdir react1
@@ -12,33 +12,33 @@ $ cd react1
 $ npm init -y
 ```
 
-## Install required dependencies...
+## Install required dependencies
 ```
 $ npm install typescript webpack babel-core babel-loader babel-preset-es2015 babel-preset-react ts-loader webpack-dev-server --save-dev
 $ npm install react react-dom --save
 $ npm install @types/react @types/react-dom --save-dev
 ```
 
-## Edit file `package.json` to configure the `npm start` command...
+## Edit file `package.json` to configure the `npm start` command
 ```json
 "scripts": {
   "start": "webpack-dev-server"
 }
 ```
 
-## Generate file `tsconfig.json`...
+## Generate file `tsconfig.json`
 ```
 $ tsc --init --jsx preserve --module es6 --target es6 --sourceMap --allowSyntheticDefaultImports
 ```
 
-## Add file `.babelrc`...
+## Add file `.babelrc`
 ```json
 {
   "presets": ["es2015", "react"]
 }
 ```
 
-## Add file `webpack.config.js`...
+## Add file `webpack.config.js`
 ```js
 const webpack = require('webpack');
 const path = require('path');
@@ -72,7 +72,7 @@ module.exports = {
 };
 ```
 
-## Add file `src/index.tsx`...
+## Add file `src/index.tsx`
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -85,7 +85,7 @@ const App = () =>
 ReactDOM.render(<App />, document.getElementById('app'));
 ```
 
-## Add file `index.html`...
+## Add file `index.html`
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -100,7 +100,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 </html>
 ```
 
-## Start the webpack development server...
+## Start the webpack development server
 ```
 $ npm start
 ```
