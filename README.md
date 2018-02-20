@@ -105,12 +105,12 @@ ReactDOM.render(<App />, document.getElementById('app'));
 $ npm start
 ```
 
-Navigate browser to http://localhost:3000 to view the **Hello world!** page.
+Navigate to http://localhost:3000 to view the **Hello world!** page.
 
-Go back and make some changes to the page and notice the page is automatically reloaded when edited!
+Change *Hello world!* to just *Hello!* in file `src/index.tsx` and notice the page is automatically reloaded!
 
 ## More
-* [How to setup React Router](more/router.md)
+* [How to setup React Router](https://github.com/davetemplin/react2)
 * [How to load React libraries from CDN](more/cdn.md)
 * [How to manage state with Redux](more/redux.md)
 
